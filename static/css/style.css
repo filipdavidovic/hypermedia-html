@@ -15,6 +15,13 @@
     flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .row-eq-height > [class*='col-'] {
+      display: flex;
+      flex-direction: row;
+  }
+}
+
 .no-padding-cols > [class*='col-'] {
   padding: 0;
   margin: 0;
@@ -113,4 +120,8 @@ html, body {
 .nav-pills > li {
   float: none;
   display: inline-block;
+}
+
+.content-margins {
+  margin-top: 100px;
 }

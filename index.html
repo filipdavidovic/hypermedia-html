@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
-    <nav class="navbar navbar-default" style="padding: 0 0 15px 40px; margin-bottom:0;">
+    <!-- <nav class="navbar navbar-default" style="padding: 0 0 15px 40px; margin-bottom:0;">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,11 +29,11 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">Nederlands</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-    </nav>
+      </div>
+    </div>
+    </nav> -->
     <header>
-        <nav class="navbar navbar-default">
+        <nav id="mainNavigation" class="navbar navigacija navbar-default navbar-fixed-top">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -45,15 +45,15 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">  <!-- TODO: jQuery for active tab -->
               <li class="active">
-                <a href="#">Home</a>
+                <a id="homeHeaderAnchor" class="topHeaderAnchor" href="#">Home</a>
               </li>
 
               <li>
-                <a href="#">Forum</a>
+                <a id="forumHeaderAnchor" class="topHeaderAnchor" href="#">Forum</a>
               </li>
 
               <li class="dropdown dropdown-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faclties</a>
+                <a id="facultiesHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faculties</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a href="#">Faculties</a>
@@ -82,7 +82,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Studying</a>
+                <a id="studyingHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Studying</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a href="#">Electives</a>
@@ -123,7 +123,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organization</a>
+                <a id="organizationHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organization</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a href="#">Map</a>
@@ -166,83 +166,85 @@
           </div><!--/.nav-collapse -->
       </nav>
     </header>
-    <div class="container-fluid">
-      <div class="row row-eq-height no-padding-cols">
-        <div class="col-md-6">
-          <div style="padding:10%; background-color:#84BCDA; height: 100%;">
-            <h1> All your course information. Find it right here.</h1>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Course code, course or teacher">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-              </span>
-            </div> <!-- /input-group -->
+    <div class="content-margins">
+      <div class="container-fluid">
+        <div class="row row-eq-height no-padding-cols">
+          <div class="col-md-6">
+            <div style="padding:10%; background-color:#84BCDA; height: 100%;">
+              <h1> All your course information. Find it right here.</h1>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Course code, course or teacher">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </span>
+              </div> <!-- /input-group -->
+            </div>
+          </div> <!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div style="padding:10%; background-color:#ECC30B; height: 100%;">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            </div>
+          </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
+        <div class="row">
+          <div class="col-xs-offset-2">
+            <h1> Or choose a study phase</h1>
+          </div> <!-- /col-md-12 -->
+        </div>
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="pill" href="#bachelor">Bachelor</a>
+          </li>
+
+          <li>
+            <a data-toggle="pill" href="#premaster">Pre-Master</a>
+          </li>
+
+          <li>
+            <a data-toggle="pill" href="#master">Master</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="bachelor" class="tab-pane fade in active">
+            <h1 class="subtitle">Bachelor</h1>
           </div>
-        </div> <!-- /.col-md-6 -->
 
-        <div class="col-md-6">
-          <div style="padding:10%; background-color:#ECC30B; height: 100%;">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+          <div id="premaster" class="tab-pane">
+            <h1 class="subtitle">Pre-Master</h1>
           </div>
-        </div> <!-- /.col-md-6 -->
-      </div> <!-- /.row -->
-      <div class="row">
-        <div class="col-xs-offset-2">
-          <h1> Or choose a study phase</h1>
-        </div> <!-- /col-md-12 -->
-      </div>
-      <ul class="nav nav-pills">
-        <li class="active">
-          <a data-toggle="pill" href="#bachelor">Bachelor</a>
-        </li>
 
-        <li>
-          <a data-toggle="pill" href="#premaster">Pre-Master</a>
-        </li>
-
-        <li>
-          <a data-toggle="pill" href="#master">Master</a>
-        </li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="bachelor" class="tab-pane fade in active">
-          <h1 class="subtitle">Bachelor</h1>
+          <div id="master" class="tab-pane">
+            <h1 class="subtitle">Master</h1>
+          </div>
         </div>
 
-        <div id="premaster" class="tab-pane">
-          <h1 class="subtitle">Pre-Master</h1>
+        <div class="row">
+          <h1>More shit here</h1>
         </div>
 
-        <div id="master" class="tab-pane">
-          <h1 class="subtitle">Master</h1>
-        </div>
-      </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
-      <div class="row">
-        <h1>More shit here</h1>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
+      </div>    
     </div>
     <footer class="page-footer"><!-- footer -->
       <div class="upper-footer">
@@ -297,5 +299,6 @@
     </footer>
     <script src="./static/js/jquery-3.1.1.min.js"></script>
     <script src="./static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./static/js/script.js"></script>
   </body>
 </html>
