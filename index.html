@@ -5,88 +5,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="static/bootstrap/css/custom.css" />
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="static/bootstrap/js/bootstrap.min.js"></script>
-  <nav class="navbar navbar-default" style="padding: 0 0 15px 40px; margin-bottom:0;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://www.tue.nl" >
-        <img class="img-responsive" src="static/images/tue.png" style="height:200%;width:auto;"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Education Guide<span class="sr-only"></span></a></li>
-        <li><a href="#">Intranet</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Nederlands</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-  </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <ul class="nav nav-pills nav-justified">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Faculties</a></li>
-        <li role="presentation"><a href="#">Studying</a></li>
-        <li role="presentation"><a href="#">Organization</a></li>
-      </ul>
-    </div><!-- /.row -->
-    <div class="row row-eq-height">
-      <div class="col-md-6" style="padding:10%;background-color:#84BCDA;margin-bottom:0;margin-top:0;">
-          <h1> All your course information.<br> Find it right here.</h1>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Course code, course or teacher">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-            </span>
-          </div><!-- /input-group -->
-      </div><!-- /.col-md-6 -->
-      <div class="col-md-6" style="background-color:#ECC30B;">
-          <a href="#"><h1 style="padding-top:55%;">Are you a visitor?</h1></a>
-      </div><!-- /.col-md-6 -->
-    </div><!-- /.row -->
-    <div class="row">
-      <div class="col-xs-offset-2">
-        <h1> Or coose a study phase</h1>
-      </div><!-- /col-md-12 -->
-    </div>
-    <div class="row">
-        <div class="btn-group btn-group-justified" role="group">
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Bachelor</button>
+    <nav class="navbar navbar-default" style="padding: 0 0 15px 40px; margin-bottom:0;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.tue.nl" >
+          <img class="img-responsive" src="static/images/tue.png" style="height:200%;width:auto;"/>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Education Guide<span class="sr-only"></span></a></li>
+          <li><a href="#">Intranet</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Nederlands</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <header>
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Pre-Master</button>
-         </div>
-         <div class="btn-group" role="group">
-           <button type="button" class="btn btn-default">Master</button>
-         </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">  <!-- TODO: jQuery for active tab -->
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+
+              <li>
+                <a href="#">Forum</a>
+              </li>
+
+              <li class="dropdown dropdown-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faclties</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Faculties</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Undergraduate
+                  </li>
+
+                  <li>
+                    <a href="#">Bachelor</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Graduate
+                  </li>
+
+                  <li>
+                    <a href="#">Pre-Master</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Master</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Studying</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Electives</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Notebook</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Canvas</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Timetables & Timeslots</a>
+                  </li>
+
+                  <li>
+                    <a href="#">PlanApp</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Internationals</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Students Only
+                  </li>
+
+                  <li>
+                    <a href="#">Free Software</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Academic Year</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organization</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Map</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Student-for-a-Day</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Students Only
+                  </li>
+
+                  <li>
+                    <a href="#">Advisors & Tutors</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Rules & Regulations</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Campus Card</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Visitors Only
+                  </li>
+
+                  <li>
+                    <a href="#">Enrollment</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row row-eq-height">
+        <div class="col-md-6" style="padding:10%;background-color:#84BCDA;margin-bottom:0;margin-top:0;">
+            <h1> All your course information.<br> Find it right here.</h1>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Course code, course or teacher">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-md-6 -->
+        <div class="col-md-6" style="background-color:#ECC30B;">
+            <a href="#"><h1 style="padding-top:55%;">Are you a visitor?</h1></a>
+        </div><!-- /.col-md-6 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-offset-2">
+          <h1> Or choose a study phase</h1>
+        </div><!-- /col-md-12 -->
+      </div>
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a data-toggle="pill" href="#bachelor">Bachelor</a>
+        </li>
+
+        <li>
+          <a data-toggle="pill" href="#premaster">Pre-Master</a>
+        </li>
+
+        <li>
+          <a data-toggle="pill" href="#master">Master</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="bachelor" class="tab-pane fade in active">
+          <h1 class="subtitle">Bachelor</h1>
         </div>
+
+        <div id="premaster" class="tab-pane">
+          <h1 class="subtitle">Pre-Master</h1>
+        </div>
+
+        <div id="master" class="tab-pane">
+          <h1 class="subtitle">Master</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1>More shit here</h1>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
     </div>
-    <div class="row">
-      <h1>More shit here</h1>
-    </div>
-    <footer class="row" class="page-footer navbar-fixed-bottom"><!-- footer -->
-        <div class="col-xs-4">
-          Will we
-        </div>
-        <div class="col-xs-4">
-          do
-        </div>
-        <div class="col-xs-4">
-          Three columns?
-        </div>
+    <footer class="page-footer"><!-- footer -->
+      <div class="upper-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="helper">
+              <p class="footer-text">
+                &copy; 2017 TU/e
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="helper">
+              <ul id="socialMedia">
+                <li>
+                  <a href="https://twitter.com/TUeindhoven">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/TU.Eindhoven">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://google.com/+tueindhoven">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/4838">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/tueindhoven">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="helper">
+              <p class="footer-text">
+                Where innovation starts
+              </p>
+            </div>
+          </div>
+        </div> <!-- row -->
+      </div>
     </footer>
-  </div>
+    <script src="./static/js/jquery-3.1.1.min.js"></script>
+    <script src="./static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
