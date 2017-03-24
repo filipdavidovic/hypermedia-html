@@ -31,6 +31,24 @@ ul#socialMedia li {
   font-size: 25px; /* TODO: add class to fa-3 or fa-2 and remove font-size*/
 }
 
+.contact
+{
+margin: auto;
+text-align:left;
+border-spacing: 20px 5px;
+border-collapse: separate;
+font-family: 'Lato', sans-serif;
+color: white;
+font-size: 18px;
+}
+
+.link
+{
+   color:white;
+   text-decoration: none;
+   background-color: none;
+}
+
 .fa-facebook:hover,
 .fa-facebook:focus {
   color: #3b5998;

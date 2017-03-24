@@ -6,6 +6,13 @@
   font-size: 18px;
 }
 
+.footer-header {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight:bold;
+  font-size: 24px;
+}
+
 .subtitle {
   text-align: center;
   font-family: 'Lato', sans-serif;
