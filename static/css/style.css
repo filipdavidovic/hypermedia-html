@@ -110,7 +110,7 @@ body {
   /*bottom: 0;*/
   top: 0;
   left: 0;
-  background-color: purple; /*TODO: change color accordingly*/
+  background-color: #2f3264; /*TODO: change color accordingly*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -120,7 +120,7 @@ body {
 
 .nav-pills > li.active > a:before {
   visibility: visible;
-  background-color: green; /*TODO: change color accordingly*/
+  background-color: #d22061; /*TODO: change color accordingly*/
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -157,7 +157,7 @@ body {
 .accordion:before {
   content: "";
   position: absolute;
-  background-color: purple;
+  background-color: #2f3264; /* TODO: change color accordingly */
   width: 100%;
   height: 2px;
   top: 0;
@@ -200,7 +200,7 @@ body {
 
 .accordion.active:before {
   visibility: visible;
-  background-color: green; /*TODO: change color accordingly*/
+  background-color: #d22061; /*TODO: change color accordingly*/
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }

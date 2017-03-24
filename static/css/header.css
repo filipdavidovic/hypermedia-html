@@ -1,3 +1,15 @@
+@media all and (max-width: 768px) {
+  /*.navbar-brand img {
+    height: 30px;
+    width: auto;
+  }*/
+}
+
+/*.navbar-brand img {
+  height: 30px;
+  width: auto;
+}*/
+
 @media (min-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
@@ -6,7 +18,7 @@
     }
 
     .navbar .navbar-nav > li {
-      padding: 0 50px;
+      /*padding: 0 50px;*/
     }
 
     #mainNavigation:not(.top-nav-collapse) .navbar-nav ul.dropdown-menu {
@@ -36,6 +48,11 @@
       height: inherit;
       min-height: 50px;
     }
+
+    /*.navbar-brand > img {
+       height: 70px;
+       width: auto;
+    }*/
 }
 
 /* TODO: ??? */
@@ -87,7 +104,7 @@
   /*bottom: 0;*/
   top: 0;
   left: 0;
-  background-color: purple; /*TODO: change color accordingly*/
+  background-color: #2f3264; /*TODO: change color accordingly*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -97,7 +114,7 @@
 
 .navbar-default .navbar-nav > li.active > a:before {
   visibility: visible;
-  background-color: green; /*TODO: change color accordingly*/
+  background-color: #d22061; /*TODO: change color accordingly*/
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
