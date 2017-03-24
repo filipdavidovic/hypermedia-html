@@ -38,15 +38,11 @@
     }
 }
 
-/*#mainNavigation {
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease;
-}*/
-
-#navbar a.topHeaderAnchor { /* TODO: ??? */
+/* TODO: ??? */
+/*#navbar a.topHeaderAnchor {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-}
+}*/
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: black;
@@ -83,7 +79,7 @@
   transform: scaleX(1);
 }
 
-.navbar-default .navbar-nav > li > a:before {
+.navbar-default .navbar-nav > li > a:before { /* TODO: check underline bottom */
   content: "";
   position: absolute;
   width: 100%;
@@ -95,8 +91,8 @@
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-default .navbar-nav > li.active > a:before {

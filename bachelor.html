@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Education Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-default" style="padding: 0 0 15px 40px; margin-bottom:0;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.tue.nl" >
+          <img class="img-responsive" src="static/images/tue.png" style="height:200%;width:auto;"/>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Education Guide<span class="sr-only"></span></a></li>
+          <li><a href="#">Intranet</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Nederlands</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav> -->
+    <header>
+        <nav id="mainNavigation" class="navbar navigacija navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="navbarBrand">
+              <a class="navbar-brand" href="#"><img src="./static/images/tue.png" style="height: 70px; width: auto;"/></a>
+            </div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+            <!-- TODO: jQuery for active tab -->
+              <li data-toggle="tooltip" title="Home" data-placement="bottom">
+                <a id="homeHeaderAnchor" class="topHeaderAnchor" href="./index.html">Home</a>
+              </li>
+
+              <li data-toggle="tooltip" title="Forum" data-placement="bottom">
+                <a id="forumHeaderAnchor" class="topHeaderAnchor" href="#">Forum</a>
+              </li>
+
+              <li class="active dropdown dropdown-large">
+                <a id="facultiesHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Faculties</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Faculties</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Undergraduate
+                  </li>
+
+                  <li>
+                    <a href="./bachelor.html">Bachelor</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Graduate
+                  </li>
+
+                  <li>
+                    <a href="#">Pre-Master</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Master</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a id="studyingHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Studying</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Electives</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Notebook</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Canvas</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Timetables & Timeslots</a>
+                  </li>
+
+                  <li>
+                    <a href="#">PlanApp</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Internationals</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Students Only
+                  </li>
+
+                  <li>
+                    <a href="#">Free Software</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Academic Year</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a id="organizationHeaderAnchor" href="#" class="dropdown-toggle topHeaderAnchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organization</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Map</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Student-for-a-Day</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Students Only
+                  </li>
+
+                  <li>
+                    <a href="#">Advisors & Tutors</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Rules & Regulations</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Campus Card</a>
+                  </li>
+
+                  <li class="dropdown-header">
+                    Visitors Only
+                  </li>
+
+                  <li>
+                    <a href="#">Enrollment</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </nav>
+  </header>
+  <div class="content-margins" style="margin-top: 105px;">
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Faculties</a>
+      </li>
+      <li>
+        <a href="#">Undergraduate - Bachlor</a>
+      </li>
+      <li>
+        <a href="#">Software Science</a>
+      </li>
+      <li>
+        <a href="#">Curriculum</a>
+      </li>
+    </ol>
+    <div class="row">
+      <div class="col-md-3 accordion-col">
+        <div class="col-helper">
+          <button class="accordion accordion-dropdown">Curriculum</button>
+          <div class="accordion-panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button onclick="location.href='#';" class="accordion">Professional Development</button>
+
+          <button onclick="location.href='#';" class="accordion">Examination Schedules</button>
+
+          <button onclick="location.href='#';" class="accordion">Graduation Deadlines</button>
+
+          <button onclick="location.href='#';" class="accordion">Contact</button>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Curriculum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="pill" href="#firstYear">First Year</a>
+          </li>
+
+          <li>
+            <a data-toggle="pill" href="#secondYear">Second Year</a>
+          </li>
+
+          <li>
+            <a data-toggle="pill" href="#thirdYear">Third Year</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="firstYear" class="tab-pane fade in active">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>
+                    Course Name
+                  </th>
+                  <th>
+                    Course Code
+                  </th>
+                  <th>
+                    Quartile
+                  </th>
+                  <th>
+                    Available Timeslots
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    Calculus
+                  </td>
+                  <td>
+                    2WBB0
+                  </td>
+                  <td>
+                    One (Q1)
+                  </td>
+                  <td>
+                    B
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Programming
+                  </td>
+                  <td>
+                    2IP90
+                  </td>
+                  <td>
+                    One (Q1)
+                  </td>
+                  <td>
+                    E
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Logic and Set Theory
+                  </td>
+                  <td>
+                    2IT60
+                  </td>
+                  <td>
+                    One (Q1)
+                  </td>
+                  <td>
+                    D
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Applied Physical Sciences
+                  </td>
+                  <td>
+                    3NAB0
+                  </td>
+                  <td>
+                    Two (Q2)
+                  </td>
+                  <td>
+                    B
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Computer Systems
+                  </td>
+                  <td>
+                    2IC30
+                  </td>
+                  <td>
+                    Two (Q2)
+                  </td>
+                  <td>
+                    C/E
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Elective
+                  </td>
+                  <td>
+                    *
+                  </td>
+                  <td>
+                    Two (Q2)
+                  </td>
+                  <td>
+                    *
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Introduction to Modeling
+                  </td>
+                  <td>
+                    0LEB0
+                  </td>
+                  <td>
+                    Three (Q3)
+                  </td>
+                  <td>
+                    A
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Data Structures
+                  </td>
+                  <td>
+                    2IL50
+                  </td>
+                  <td>
+                    Three (Q3)
+                  </td>
+                  <td>
+                    B
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    DBL Embedded Systems
+                  </td>
+                  <td>
+                    2IO70
+                  </td>
+                  <td>
+                    Three (Q3)
+                  </td>
+                  <td>
+                    C
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    USE
+                  </td>
+                  <td>
+                    0SAB0
+                  </td>
+                  <td>
+                    Four (Q4)
+                  </td>
+                  <td>
+                    A
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Automata and Process Theory
+                  </td>
+                  <td>
+                    2IT70
+                  </td>
+                  <td>
+                    Four (Q4)
+                  </td>
+                  <td>
+                    B
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Elective
+                  </td>
+                  <td>
+                    *
+                  </td>
+                  <td>
+                    Four (Q4)
+                  </td>
+                  <td>
+                    *
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="secondYear" class="tab-pane">
+            <h1 class="subtitle">2</h1>
+          </div>
+
+          <div id="thirdYear" class="tab-pane">
+            <h1 class="subtitle">3</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-helper">
+          <h2>Contact</h2>
+          <div class="contact-box clearfix">
+            <h4>Onderwijsadministratie W&I</h3>
+            <p>
+              <a href="mailto:studadm.win@TUE.nl"><i class="fa fa-envelope" aria-hidden="true"></i> studadm.win@TUE.nl</a>
+            </p>
+            <p>
+              <a href="tel:00314024723798343"><i class="fa fa-phone" aria-hidden="true"></i> +31 40-247 2379/8343</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer"><!-- footer -->
+    <div class="upper-footer">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="helper">
+            <p class="footer-text">
+              &copy; 2017 TU/e
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="helper">
+            <ul id="socialMedia">
+              <li>
+                <a href="https://twitter.com/TUeindhoven">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/TU.Eindhoven">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://google.com/+tueindhoven">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/4838">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/tueindhoven">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="helper">
+            <p class="footer-text">
+              Where innovation starts
+            </p>
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div>
+  </footer>
+  <script src="./static/js/jquery-3.1.1.min.js"></script>
+  <script src="./static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./static/js/script.js"></script>
+</body>
+</html>
