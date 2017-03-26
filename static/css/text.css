@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+.page-title {
+  font-family: 'Lato', sans-serif;
+  /*color: #2f3264;*/
+  color: black;
+  font-size: 50px;
+}
+
 .footer-text {
   font-family: 'Lato', sans-serif;
   color: white;
