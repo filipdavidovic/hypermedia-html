@@ -44,7 +44,7 @@
               <span class="icon-bar"></span>
             </button>
             <div id="navbarBrand">
-              <a class="navbar-brand" href="#"><img src="" id="bannerImage"/></a>
+              <a class="navbar-brand" href="./index.html"><img src="" id="bannerImage"/></a>
             </div>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -173,33 +173,23 @@
       </nav>
   </header>
     <div class="content-margins">
+      <div class="row row-eq-height no-padding-cols">
+        <div class="col-md-9 col-xs-12">
+          <div class="parallax" style="background-image: url('./static/img/carousel4-vertigo.png'); background-position: center 25%;"></div>
+        </div> <!-- /.col-md-6 -->
+
+        <div class="col-md-3 col-xs-12">
+          <div style="padding: 10%; height: 100%; background-color: #e7e7e7;">
+            <h1 style="text-align: center;">You are currently Student user type.</h1>
+            <h2 style="text-align: center;">If you want to change it to Visitor, you can do it here.</h2>
+            <div class="button-col-helper" style="margin-top: 25px;">
+              <button class="buttonGeneric hvr-underline-from-center">Change type to Visitor</button>
+            </div>
+          </div>
+        </div> <!-- /.col-md-6 -->
+      </div> <!-- /.row -->
       <div class="container-fluid">
-        <div class="row row-eq-height no-padding-cols">
-          <div class="col-md-6">
-            <div style="padding:10%; background-color:#84BCDA; height: 100%;">
-              <h1> All your course information. Find it right here.</h1>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Course code, course or teacher">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                </span>
-              </div> <!-- /input-group -->
-            </div>
-          </div> <!-- /.col-md-6 -->
-
-          <div class="col-md-6">
-            <div style="padding:10%; background-color:#ECC30B; height: 100%;">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-            </div>
-          </div> <!-- /.col-md-6 -->
-        </div> <!-- /.row -->
-
-        <div class="row">
-          <div class="col-xs-offset-2">
-            <h1> Or choose a study phase</h1>
-          </div> <!-- /col-md-12 -->
-        </div>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills" style="margin-top: 20px;">
           <li class="active hvr-overline-from-center">
             <a data-toggle="pill" href="#bachelor">Bachelor</a>
           </li>
@@ -213,9 +203,9 @@
           </li>
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content" style="margin-bottom: 20px;">
           <div id="bachelor" class="tab-pane fade in active">
-            <h1 class="subtitle">Bachelor</h1>
+            <input type="text" class="form-control search-bar" placeholder="Search For Majors or Faculties - Bachelor" id="searchBar" />
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="program-thumbnail">
@@ -260,38 +250,95 @@
           </div>
 
           <div id="premaster" class="tab-pane">
-            <h1 class="subtitle">Pre-Master</h1>
+            <input type="text" class="form-control search-bar" placeholder="Search For Majors or Faculties - Pre-Master" id="searchBar" />
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #d22061;"></div>
+                  <h2>Software Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #d22061;"></div>
+                  <h2>Web Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #000099;"></div>
+                  <h2>Data Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #009933;"></div>
+                  <h2>Psychology & Technology</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #FFFF00;"></div>
+                  <h2>Electrical Engineering</h2>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div id="master" class="tab-pane">
-            <h1 class="subtitle">Master</h1>
+            <input type="text" class="form-control search-bar" placeholder="Search For Majors or Faculties - Master" id="searchBar" />
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #d22061;"></div>
+                  <h2>Software Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #d22061;"></div>
+                  <h2>Web Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #000099;"></div>
+                  <h2>Data Science</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #009933;"></div>
+                  <h2>Psychology & Technology</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="program-thumbnail">
+                  <img class="img-responsive img-center" src="http://placehold.it/500x300">
+                  <div class="program-colored-rect" style="background-color: #FFFF00;"></div>
+                  <h2>Electrical Engineering</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <h1>More shit here</h1>
-        </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
       </div>
     </div>
     <footer class="page-footer"><!-- footer -->
@@ -345,9 +392,6 @@
                   </td>
                 </tr>
               </table>
-
-
-
             </div>
           </div>
 

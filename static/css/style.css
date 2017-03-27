@@ -52,6 +52,10 @@ body {
   text-align: center;
 }
 
+.nav-pills > li {
+  padding: 10px 15px;
+}
+
 /* solid color pills
 .nav-pills > li > a {
   color: black;
@@ -119,7 +123,7 @@ body {
   transition: all 0.2s ease-in-out 0s;
 }*/
 
-.nav-pills > li.active > a:before {
+.nav-pills > li.active:before {
   content: "";
   visibility: visible;
   position: absolute;
@@ -204,7 +208,7 @@ body {
 }
 
 .generic-box {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8; /* #e7e7e7 */
   padding: 20px;
   margin: 20px 0;
   border-top: 3px solid #d22061;
@@ -227,6 +231,10 @@ body {
   background-color: #e7e7e7;
   padding: 10px 20px;
   margin: 20px;
+}
+
+.program-thumbnail img {
+  margin-top: 15px;
 }
 
 .program-colored-rect {
@@ -252,11 +260,16 @@ body {
 .buttonGeneric {
   /*border-radius: 7px;*/
   background-color: white;
+  /*border-top: 2px solid black;*/
   border: none;
   color: black;
   text-align: center;
   height: 50px;
   width: 200px;
+}
+
+.button-col-helper {
+  text-align: center;
 }
 
 .pagination-custom {
@@ -286,12 +299,21 @@ body {
 
 .parallax {
     background-image: url("../img/carousel2-mf.png");
-
+    background-position: center 75%;
     height: 500px;
     width: 100%;
-
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.search-bar {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 10px #2f3264;
+  border: 2px solid #2f3264;
 }
