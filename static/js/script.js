@@ -61,9 +61,9 @@ $(document).ready(function() {
   function checkTooltip() {
     // console.log($(window).scrollTop());
     if($(window).scrollTop() > 100) {
-      $('[data-toggle="tooltip"]').tooltip("enable");
+      $('[data-toggle="tooltip"].headerTooltip').tooltip("enable");
     } else {
-      $('[data-toggle="tooltip"]').tooltip("disable");
+      $('[data-toggle="tooltip"].headerTooltip').tooltip("disable");
     }
   }
 
@@ -91,23 +91,29 @@ $(document).ready(function() {
       checkTooltip();
       $('.navbar .navbar-nav > li').css("padding", "0 50px");
       resizeBanner("large");
+      $('.generic-tooltip').attr("data-placement", "right");
     } else if($(window).width() > 964) { // (964, 1321]
       changeToCollapsed();
       // $('#navbarBrand').hide(400);
       $('.nav.navbar-nav').addClass("pull-right");
       $('.navbar .navbar-nav > li').css("padding", "0 10px");
       resizeBanner("medium");
+      $('.generic-tooltip').attr("data-placement", "right");
     } else if($(window).width() > 768) { // (768, 964]
       resizeBanner("small");
       $('.navbar .navbar-nav > li').css("padding", "0 10px");
       $('.nav.navbar-nav').addClass("pull-right");
+      $('.generic-tooltip').attr("data-placement", "right");
     } else { // [0, 768]
       $('.nav.navbar-nav').removeClass("pull-right");
       $('.navbar .navbar-nav > li').css("padding", null);
       resizeBanner("extra-small");
       $('.navbar .navbar-nav > li').css("padding", null);
+      $('.generic-tooltip').attr("data-placement", "bottom");
     }
   }
+
+  $('[data-toggle="tooltip"].generic-tooltip').tooltip("enable");
 
   fixHeader();
 

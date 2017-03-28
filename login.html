@@ -54,7 +54,7 @@
                 <a id="homeHeaderAnchor" class="topHeaderAnchor" href="./index.html">Home</a>
               </li>
 
-              <li class="headerTooltip active" data-toggle="tooltip" title="Forum" data-placement="bottom">
+              <li class="active headerTooltip" data-toggle="tooltip" title="Forum" data-placement="bottom">
                 <a id="forumHeaderAnchor" class="topHeaderAnchor" href="#">Forum</a>
               </li>
 
@@ -184,111 +184,35 @@
           </div>
       </nav>
   </header>
-  <div class="content-margins">
-    <div class="parallax"></div>
-    <div class="container-fluid">
-      <h1 class="page-title" style="text-align: center;">TU/e Forum</h1>
 
+  <div class="content-margins" style="margin-top: 110px;">
+    <div class="container-fluid" style="margin-bottom: 20px;">
+      <div class="alert alert-error alert-dismissable" role="alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
+        Invalid username and password combination
+      </div>
+      <h1 class="page-title">Sign In</h1>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9 col-sm-12">
           <div class="col-helper">
-            <div class="forum-thumbnail clearfix">
-              <h1>Newbie Forum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="forum-colored-rect" style="background-color: #CC3300;"></div>
-              <h3 class="pull-left">
-                Number of posts: 234
-              </h3>
-            </div>
+            <form class="form-horizontal clearfix" action="" method="post" role="form">
+              <div class="form-group input-form-group">
+                <label class="control-label" for="username">Username (Your S-Number)</label>
+                <input type="text" class="error-form-field form-control form-input-mod" placeholder="Username" id="username" />
+              </div>
 
-            <div class="forum-thumbnail clearfix">
-              <h1>Computer Science Forum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="forum-colored-rect" style="background-color: #00FFFF;"></div>
-              <h3 class="pull-left">
-                Number of posts: 234
-              </h3>
-            </div>
+              <div class="form-group input-form-group">
+                <label class="control-label" for="password">Password</label>
+                <input type="password" class="error-form-field form-control form-input-mod" placeholder="Password" id="password" />
+              </div>
 
-            <div class="forum-thumbnail clearfix">
-              <h1>Internationals Forum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="forum-colored-rect" style="background-color: #660066;"></div>
-              <h3 class="pull-left">
-                Number of posts: 234
-              </h3>
-            </div>
-
-            <div class="forum-thumbnail clearfix">
-              <h1>Sustainability Forum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="forum-colored-rect" style="background-color: #009900;"></div>
-              <h3 class="pull-left">
-                Number of posts: 234
-              </h3>
-            </div>
-
-            <div class="forum-thumbnail clearfix">
-              <h1>Random Forum</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="forum-colored-rect" style="background-color: #FFFF00;"></div>
-              <h3 class="pull-left">
-                Number of posts: 234
-              </h3>
-            </div>
+              <button class="pull-right buttonGeneric hvr-underline-from-center" style="margin-right: 0;">Sign In.</button>
+            </form>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-12">
           <div class="col-helper">
-            <div class="generic-box">
-              <h2>This is how it works</h2>
-              <ol>
-                <li>
-                  <p>
-                    Register and log in to the community
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    Ask your question and discuss
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    Help others and find answers
-                  </p>
-                </li>
-              </ol>
-              <div class="button-col-helper">
-                <button style="background-color: #E0E0E8;" class="buttonGeneric hvr-underline-from-center" onclick="location.href='./register.html'">Register</button>
-              </div>
-            </div>
-
-
-            <div class="generic-box">
-              <h2>Sign In</h2>
-              <p>
-                Are you a member already? Sign in here!
-              </p>
-
-              <div class="button-col-helper">
-                <button style="background-color: #E0E0E8;" class="buttonGeneric hvr-underline-from-center" onclick="location.href='./login.html'">Sign In</button>
-              </div>
-            </div>
-
             <div class="generic-box">
               <h2>Lorem Ipsum</h2>
               <p>
@@ -297,33 +221,10 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 
-  <ul class="pagination-custom" style="margin: 50px 0;">
-    <li class="hvr-underline-from-center">
-      <a href="#">&laquo;</a>
-    </li>
-
-    <li class="active hvr-underline-from-center">
-      <a href="#">1</a>
-    </li>
-
-    <li class="hvr-underline-from-center">
-      <a href="#">2</a>
-    </li>
-
-    <li class="hvr-underline-from-center">
-      <a href="#">3</a>
-    </li>
-
-    <li class="hvr-underline-from-center">
-      <a href="#">&raquo;</a>
-    </li>
-  </ul>
-
-  <footer class="page-footer"><!-- footer -->
+  <footer class="page-footer">
     <div class="upper-footer">
       <div class="row" style="padding-bottom: 30px;">
         <div class="col-md-6">
@@ -403,7 +304,7 @@
             </table>
           </div>
         </div>
-      </div> <!-- row -->
+      </div>
 
       <div class="row" style="padding-bottom: 20px;">
         <div class="col-md-4">
@@ -451,7 +352,7 @@
             </p>
           </div>
         </div>
-      </div> <!-- row -->
+      </div>
     </div>
   </footer>
   <script src="./static/js/jquery-3.1.1.min.js"></script>

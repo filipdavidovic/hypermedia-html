@@ -2,6 +2,12 @@
 @import url("footer.css");
 @import url("text.css");
 
+@media all and (max-width: 768px) {
+  .nav-pills > li {
+    padding: 10px 5px;
+  }
+}
+
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
@@ -35,6 +41,7 @@ html {
 body {
     min-height: 100%;
     position: relative;
+    background-color: #F5F5F7;
 }
 
 .wrapper {
@@ -149,7 +156,7 @@ body {
 }
 
 .accordion {
-  background-color: #f8f8f8;
+  background-color: #EAEAF0;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -164,7 +171,7 @@ body {
 }
 
 .accordion:hover {
-  background-color: #f8f8f8;
+  background-color: #EAEAF0;
 }
 
 /*.accordion:hover:before {
@@ -187,19 +194,23 @@ body {
 
 .accordion.active {
   color: black;
-  background-color: #f8f8f8;
+  background-color: #EAEAF0;
   position: relative;
   text-decoration: none;
 }
 
 .accordion-panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #E0E0E8;
     max-height: 0;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
     transition: max-height 0.2s ease-out;
+}
+
+.accordion-panel > .accordion {
+  background-color: #E0E0E8;
 }
 
 .col-helper {
@@ -208,7 +219,7 @@ body {
 }
 
 .generic-box {
-  background-color: #f8f8f8; /* #e7e7e7 */
+  background-color: #EAEAF0; /* #e7e7e7 #f8f8f8 */
   padding: 20px;
   margin: 20px 0;
   border-top: 3px solid #d22061;
@@ -228,7 +239,7 @@ body {
 }
 
 .program-thumbnail {
-  background-color: #e7e7e7;
+  background-color: #EAEAF0;
   padding: 10px 20px;
   margin: 20px;
 }
@@ -259,7 +270,7 @@ body {
 
 .buttonGeneric {
   /*border-radius: 7px;*/
-  background-color: white;
+  background-color: #EAEAF0;
   /*border-top: 2px solid black;*/
   border: none;
   color: black;
@@ -316,4 +327,44 @@ body {
 .search-bar:focus {
   box-shadow: 0 0 10px #2f3264;
   border: 2px solid #2f3264;
+}
+
+.form-input-mod {
+
+}
+
+.form-input-mod:focus {
+  box-shadow: 0 0 10px #2f3264;
+  border: 2px solid #2f3264;
+}
+
+.input-form-group {
+  margin: 20px 0;
+}
+
+.error-form-field {
+  box-shadow: 0 0 10px #d22061;
+  border: 2px solid #d22061;
+}
+
+.input-group.input-group-unstyled input.form-control {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.input-group-unstyled .input-group-addon {
+    border-radius: 4px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.input-group-addon .tooltip-inner {
+    max-width: 350px;
+    width: 350px;
+}
+
+.alert-error {
+  box-shadow: 0 0 10px #d22061;
+  border: 2px solid #d22061;
+  background-color: #FAE9EF;
 }

@@ -5,29 +5,34 @@
   }*/
 }
 
-/*.navbar-brand img {
-  height: 30px;
-  width: auto;
-}*/
-
 @media (min-width: 768px) {
     .navbar .navbar-nav {
+      height: 100%;
         display: inline-block;
         float: none;
         vertical-align: top;
     }
 
+    #navbar {
+      height: 100% !important;
+    }
+
     .navbar .navbar-nav > li {
       /*padding: 0 50px;*/
+      height: 100%;
     }
 
-    #mainNavigation:not(.top-nav-collapse) .navbar-nav ul.dropdown-menu {
+    /*#mainNavigation:not(.top-nav-collapse) .navbar-nav ul.dropdown-menu {
       margin-top: 49px;
-    }
+    }*/
 
     #mainNavigation:not(.top-nav-collapse) .navbar-nav > li > a {
-      height: 50px;
-      line-height: 70px;
+      /*height: 50px;
+      line-height: 70px;*/
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     ul.nav li.dropdown:hover > ul.dropdown-menu,
@@ -41,6 +46,7 @@
 
     .navbar-default {
       height: 100px;
+      background-color: #E0E0E8;
       /*min-height: 70px;*/
     }
 
@@ -60,6 +66,18 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }*/
+
+.navbar-header {
+  background-color: #E0E0E8;
+}
+
+.navbar-toggle {
+  background-color: #FAE9EF !important;
+}
+
+.navbar-toggle.collapsed {
+  background-color: #E0E0E8 !important;
+}
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: black;
@@ -96,15 +114,15 @@
   transform: scaleX(1);
 }
 
-.navbar-default .navbar-nav > li > a:before { /* TODO: check underline bottom */
+.navbar-default .navbar-nav > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  /*bottom: 0;*/
-  top: 0;
+  bottom: 0;
+  /*top: 0;*/
   left: 0;
-  background-color: #2f3264; /*TODO: change color accordingly*/
+  background-color: #2f3264;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -114,7 +132,20 @@
 
 .navbar-default .navbar-nav > li.active > a:before {
   visibility: visible;
-  background-color: #d22061; /*TODO: change color accordingly*/
+  background-color: #d22061;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+#navbar .dropdown-menu {
+  background-color: #EAEAF0;
+}
+
+#navbar .dropdown-menu li {
+  background-color: #EAEAF0;
+}
+
+#navbar .dropdown-menu li a:hover,
+#navbar .dropdown-menu li a:focus {
+  background-color: #E0E0E8;
 }

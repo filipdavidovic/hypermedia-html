@@ -50,11 +50,11 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">
             <!-- TODO: jQuery for active tab -->
-              <li class="active" data-toggle="tooltip" title="Home" data-placement="bottom">
+              <li class="active headerTooltip" data-toggle="tooltip" title="Home" data-placement="bottom">
                 <a id="homeHeaderAnchor" class="topHeaderAnchor" href="./index.html">Home</a>
               </li>
 
-              <li data-toggle="tooltip" title="Forum" data-placement="bottom">
+              <li class="headerTooltip" data-toggle="tooltip" title="Forum" data-placement="bottom">
                 <a id="forumHeaderAnchor" class="topHeaderAnchor" href="./forum.html">Forum</a>
               </li>
 
@@ -173,22 +173,22 @@
       </nav>
   </header>
     <div class="content-margins">
-      <div class="row row-eq-height no-padding-cols">
-        <div class="col-md-9 col-xs-12">
-          <div class="parallax" style="background-image: url('./static/img/carousel4-vertigo.png'); background-position: center 25%;"></div>
-        </div> <!-- /.col-md-6 -->
-
-        <div class="col-md-3 col-xs-12">
-          <div style="padding: 10%; height: 100%; background-color: #e7e7e7;">
-            <h1 style="text-align: center;">You are currently Student user type.</h1>
-            <h2 style="text-align: center;">If you want to change it to Visitor, you can do it here.</h2>
-            <div class="button-col-helper" style="margin-top: 25px;">
-              <button class="buttonGeneric hvr-underline-from-center">Change type to Visitor</button>
-            </div>
-          </div>
-        </div> <!-- /.col-md-6 -->
-      </div> <!-- /.row -->
       <div class="container-fluid">
+        <div class="row row-eq-height no-padding-cols">
+          <div class="col-md-9 col-xs-12">
+            <div class="parallax" style="background-image: url('./static/img/carousel4-vertigo.png'); background-position: center 25%;"></div>
+          </div> <!-- /.col-md-6 -->
+
+          <div class="col-md-3 col-xs-12">
+            <div style="padding: 10%; height: 100%; background-color: #EAEAF0;">
+              <h1 style="text-align: center;">You are currently Student user type.</h1>
+              <h2 style="text-align: center;">If you want to change it to Visitor, you can do it here.</h2>
+              <div class="button-col-helper" style="margin-top: 25px;">
+                <button class="buttonGeneric hvr-underline-from-center" style="background-color: #E0E0E8;">Change type to Visitor</button>
+              </div>
+            </div>
+          </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
         <ul class="nav nav-pills" style="margin-top: 20px;">
           <li class="active hvr-overline-from-center">
             <a data-toggle="pill" href="#bachelor">Bachelor</a>
@@ -411,7 +411,9 @@
                 </tr>
                 <tr>
                   <td>
+
                   </td>
+
                   <td>
 
                   </td>
@@ -470,7 +472,6 @@
         </div> <!-- row -->
       </div>
     </footer>
-
     <script src="./static/js/jquery-3.1.1.min.js"></script>
     <script src="./static/bootstrap/js/bootstrap.min.js"></script>
     <script src="./static/js/script.js"></script>

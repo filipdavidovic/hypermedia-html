@@ -3,7 +3,7 @@ footer {
   /*right: 0;
   left: 0;
   bottom: 0;*/
-  text-align: center;
+   text-align: center;
 }
 
 .upper-footer {
@@ -31,15 +31,14 @@ ul#socialMedia li {
   font-size: 25px; /* TODO: add class to fa-3 or fa-2 and remove font-size*/
 }
 
-.contact
-{
-margin: auto;
-text-align:left;
-border-spacing: 20px 5px;
-border-collapse: separate;
-font-family: 'Lato', sans-serif;
-color: white;
-font-size: 18px;
+.contact {
+  margin: auto;
+  text-align:left;
+  border-spacing: 20px 5px;
+  border-collapse: separate;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 18px;
 }
 
 .link
@@ -72,4 +71,8 @@ font-size: 18px;
 .fa-youtube-play:hover,
 .fa-youtube-play:focus {
   color: #cd201f;
+}
+
+.upper-footer .row {
+  width: 100%;
 }
