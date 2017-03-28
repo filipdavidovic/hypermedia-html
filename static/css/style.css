@@ -6,6 +6,20 @@
   .nav-pills > li {
     padding: 10px 5px;
   }
+
+  .content-margins {
+    margin-top: 50px;
+  }
+
+  .content-margins-extended {
+    margin-top: 65px;
+  }
+}
+
+*,
+*:after,
+:before {
+  box-sizing: border-box;
 }
 
 .row-eq-height {
@@ -148,6 +162,10 @@ body {
 
 .content-margins {
   margin-top: 100px;
+}
+
+.content-margins-extended {
+  margin-top: 115px;
 }
 
 /* accordion menu */

@@ -63,6 +63,7 @@ $(document).ready(function() {
     if($(window).scrollTop() > 100) {
       $('[data-toggle="tooltip"].headerTooltip').tooltip("enable");
     } else {
+      $('[data-toggle="tooltip"].headerTooltip').tooltip("hide");
       $('[data-toggle="tooltip"].headerTooltip').tooltip("disable");
     }
   }

@@ -2,9 +2,39 @@
 
 .page-title {
   font-family: 'Lato', sans-serif;
-  /*color: #2f3264;*/
+  color: #2f3264;
   color: black;
   font-size: 50px;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #2f3264;
+  font-size: 40px;
+}
+
+.basic-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: #2f3264;
+  text-align: center;
+}
+
+.basic-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  color: #2f3264;
+}
+
+.inner-text,
+button.accordion,
+#navbar a,
+.nav-pills a,
+button.buttonGeneric span {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px !important;
+  color: #2f3264 !important;
 }
 
 .footer-text {
@@ -28,12 +58,45 @@
   font-size: 24px;
 }
 
-.subtitle {
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 40px;
+.tue-pink {
+  color: #d22061;
 }
 
-.tue-pink {
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/*.generic-box > ol li:before {
+  color: #d22061;
+}*/
+
+.inner-ol {
+    list-style-type: none;
+}
+.inner-ol ol {
+    margin-left: 2em;
+}
+.inner-ol li {
+    counter-increment: count-me;
+}
+.inner-ol li::before {
+    content: counter(count-me) ". ";
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    top: .25em;
+    color: #d22061;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+strong,
+b {
   color: #d22061;
 }

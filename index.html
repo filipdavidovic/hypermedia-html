@@ -37,7 +37,7 @@
     <header>
         <nav id="mainNavigation" class="navbar navigacija navbar-default navbar-fixed-top">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" id="navigationToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -181,10 +181,10 @@
 
           <div class="col-md-3 col-xs-12">
             <div style="padding: 10%; height: 100%; background-color: #EAEAF0;">
-              <h1 style="text-align: center;">You are currently Student user type.</h1>
-              <h2 style="text-align: center;">If you want to change it to Visitor, you can do it here.</h2>
+              <h1 class="subtitle">You are currently <span class="tue-pink">Student</span> user type.</h1>
+              <h2 class="basic-title" style="text-align: center;">If you want to change it to Visitor, you can do it here.</h2>
               <div class="button-col-helper" style="margin-top: 25px;">
-                <button class="buttonGeneric hvr-underline-from-center" style="background-color: #E0E0E8;">Change type to Visitor</button>
+                <button class="buttonGeneric hvr-underline-from-center" style="background-color: #E0E0E8;"><span>Change type to Visitor</span></button>
               </div>
             </div>
           </div> <!-- /.col-md-6 -->
@@ -211,7 +211,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Software Science</h2>
+                  <h2 class="subtitle align-right">Software Science</h2>
                 </div>
               </div>
 
@@ -219,7 +219,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Web Science</h2>
+                  <h2 class="subtitle align-right">Web Science</h2>
                 </div>
               </div>
 
@@ -227,7 +227,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #000099;"></div>
-                  <h2>Data Science</h2>
+                  <h2 class="subtitle align-right">Data Science</h2>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #009933;"></div>
-                  <h2>Psychology & Technology</h2>
+                  <h2 class="subtitle align-right">Psychology & Technology</h2>
                 </div>
               </div>
 
@@ -243,7 +243,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #FFFF00;"></div>
-                  <h2>Electrical Engineering</h2>
+                  <h2 class="subtitle align-right">Electrical Engineering</h2>
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Software Science</h2>
+                  <h2 class="subtitle align-right">Software Science</h2>
                 </div>
               </div>
 
@@ -264,7 +264,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Web Science</h2>
+                  <h2 class="subtitle align-right">Web Science</h2>
                 </div>
               </div>
 
@@ -272,7 +272,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #000099;"></div>
-                  <h2>Data Science</h2>
+                  <h2 class="subtitle align-right">Data Science</h2>
                 </div>
               </div>
 
@@ -280,7 +280,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #009933;"></div>
-                  <h2>Psychology & Technology</h2>
+                  <h2 class="subtitle align-right">Psychology & Technology</h2>
                 </div>
               </div>
 
@@ -288,7 +288,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #FFFF00;"></div>
-                  <h2>Electrical Engineering</h2>
+                  <h2 class="subtitle align-right">Electrical Engineering</h2>
                 </div>
               </div>
             </div>
@@ -301,7 +301,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Software Science</h2>
+                  <h2 class="subtitle align-right">Software Science</h2>
                 </div>
               </div>
 
@@ -309,7 +309,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #d22061;"></div>
-                  <h2>Web Science</h2>
+                  <h2 class="subtitle align-right">Web Science</h2>
                 </div>
               </div>
 
@@ -317,7 +317,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #000099;"></div>
-                  <h2>Data Science</h2>
+                  <h2 class="subtitle align-right">Data Science</h2>
                 </div>
               </div>
 
@@ -325,7 +325,7 @@
                 <div class="program-thumbnail">
                   <img class="img-responsive img-center" src="http://placehold.it/500x300">
                   <div class="program-colored-rect" style="background-color: #009933;"></div>
-                  <h2>Psychology & Technology</h2>
+                  <h2 class="subtitle align-right">Psychology & Technology</h2>
                 </div>
               </div>
 
@@ -388,7 +388,7 @@
           <div class="col-md-6">
             <div class="helper">
               <p class="footer-header">
-                Contact TU/e
+                Contact TU<b>/</b>e
               </p>
               <table class="contact" style="text-align: center;">
                 <tr>
@@ -431,7 +431,7 @@
         <div class="row" style="padding-bottom: 20px;">
           <div class="col-md-4">
             <div class="helper">
-              <p class="footer-text">
+              <p class="tue-pink footer-text">
                 &copy; 2017 TU/e
               </p>
             </div>
@@ -469,7 +469,7 @@
           </div>
           <div class="col-md-4">
             <div class="helper">
-              <p class="footer-text">
+              <p class="tue-pink footer-text">
                 Where innovation starts
               </p>
             </div>
