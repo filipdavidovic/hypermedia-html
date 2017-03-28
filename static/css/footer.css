@@ -41,13 +41,6 @@ ul#socialMedia li {
   font-size: 18px;
 }
 
-.link
-{
-   color:white;
-   text-decoration: none;
-   background-color: none;
-}
-
 .fa-facebook:hover,
 .fa-facebook:focus {
   color: #3b5998;

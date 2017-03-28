@@ -322,11 +322,12 @@ body {
 .search-bar {
   width: 60%;
   margin: 0 auto;
+  border: 2px solid #2f3264;
 }
 
 .search-bar:focus {
-  box-shadow: 0 0 10px #2f3264;
-  border: 2px solid #2f3264;
+  box-shadow: 0 0 10px #d22061;
+  border: 2px solid #d22061;
 }
 
 .form-input-mod {

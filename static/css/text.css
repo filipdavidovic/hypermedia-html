@@ -11,6 +11,14 @@
   font-family: 'Lato', sans-serif;
   color: white;
   font-size: 18px;
+  text-align: center;
+}
+
+.footer-text:hover {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
 
 .footer-header {
