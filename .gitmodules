@@ -1,0 +1,3 @@
+[submodule "hypermedia-html"]
+	path = hypermedia-html
+	url = https://github.com/filipdavidovic/hypermedia-html.git
