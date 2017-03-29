@@ -241,6 +241,7 @@ body {
   padding: 20px;
   margin: 20px 0;
   border-top: 3px solid #d22061;
+  border-radius: 0 0 5px 5px;
 }
 
 /*.banner {
@@ -260,6 +261,7 @@ body {
   background-color: #EAEAF0;
   padding: 10px 20px;
   margin: 20px;
+  border-radius: 5px;
 }
 
 .program-thumbnail img {
@@ -274,7 +276,9 @@ body {
 }
 
 .forum-thumbnail {
-  background-color: #e7e7e7;
+  background-color: #EAEAF0;
+  /*border: 1px solid #2f3264;*/
+  border-radius: 5px;
   padding: 10px 20px;
   margin: 20px;
 }
@@ -291,6 +295,7 @@ body {
   background-color: #EAEAF0;
   /*border-top: 2px solid black;*/
   border: none;
+  border-radius: 3px;
   color: black;
   text-align: center;
   height: 50px;
@@ -386,4 +391,8 @@ body {
   box-shadow: 0 0 10px #d22061;
   border: 2px solid #d22061;
   background-color: #FAE9EF;
+}
+
+.course-table {
+  margin-top: 10px;
 }

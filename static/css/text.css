@@ -3,7 +3,6 @@
 .page-title {
   font-family: 'Lato', sans-serif;
   color: #2f3264;
-  color: black;
   font-size: 50px;
 }
 
@@ -31,10 +30,25 @@
 button.accordion,
 #navbar a,
 .nav-pills a,
-button.buttonGeneric span {
+button.buttonGeneric span,
+.generic-box p {
   font-family: 'Lato', sans-serif;
   font-size: 17px !important;
   color: #2f3264 !important;
+}
+
+.generic-box h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 27px !important;
+  color: #2f3264 !important;
+  margin: 10px 0;
+}
+
+.generic-box h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 23px !important;
+  color: #2f3264 !important;
+  margin: 10px 0;
 }
 
 .footer-text {
@@ -90,13 +104,17 @@ a.footer-text:hover {
     max-width: 0px;
     max-height: 0px;
     left: -1.3em;
-    top: .25em;
+    top: .20em;
     color: #d22061;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 strong,
 b {
   color: #d22061;
+}
+
+.center-text {
+  text-align: center;
 }
