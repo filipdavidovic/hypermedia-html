@@ -18,11 +18,12 @@
   font-size: 30px;
   color: #2f3264;
   text-align: center;
+  margin-top: 10px;
 }
 
 .basic-text {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #2f3264;
 }
 
@@ -31,7 +32,8 @@ button.accordion,
 #navbar a,
 .nav-pills a,
 button.buttonGeneric span,
-.generic-box p {
+.generic-box p,
+.alert-error {
   font-family: 'Lato', sans-serif;
   font-size: 17px !important;
   color: #2f3264 !important;
@@ -117,4 +119,29 @@ b {
 
 .center-text {
   text-align: center;
+}
+
+.vertical-align-text {
+  margin: auto 0;
+}
+
+.forum-thumbnail a:hover,
+.forum-thumbnail a:focus,
+.subforum-thumbnail a:hover,
+.subforum-thumbnail a:focus {
+  text-decoration: none;
+}
+
+.forum-thumbnail p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical;
+}
+
+.subforum-thumbnail p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
 }

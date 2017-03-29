@@ -290,6 +290,32 @@ body {
   /*background-color: blue;*/
 }
 
+.subforum-thumbnail {
+  background-color: #FAE9EF;
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin: 20px;
+}
+
+.answer-box {
+  background-color: #EAEAF0;
+  padding: 20px 20px;
+  border-bottom: 2px solid #2f3264;
+  margin: 0 20px;
+}
+
+.answer-box:first-child {
+  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  margin-top: 20px;
+}
+
+.answer-box:last-child {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
 .buttonGeneric {
   /*border-radius: 7px;*/
   background-color: #EAEAF0;
@@ -395,4 +421,23 @@ body {
 
 .course-table {
   margin-top: 10px;
+}
+
+textarea.textarea-mod {
+  width: 100%;
+  /*margin: 0 auto;*/
+  /*border: 2px solid #2f3264;*/
+  resize: none;
+  border: 1px solid #2f3264;
+}
+
+textarea.textarea-mod:focus {
+  /*box-shadow: 0 0 10px #d22061;*/
+  /*border: 2px solid #d22061;*/
+  box-shadow: 0 0 10px #2f3264;
+  border: 2px solid #2f3264;
+}
+
+.padding-form-group {
+  padding: 0 20px;
 }
