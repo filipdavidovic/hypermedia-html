@@ -44,7 +44,7 @@ button.buttonGeneric span {
   text-align: center;
 }
 
-.footer-text:hover {
+a.footer-text:hover {
   font-family: 'Lato', sans-serif;
   color: white;
   font-size: 18px;
